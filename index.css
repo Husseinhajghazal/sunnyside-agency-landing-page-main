@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Barlow", sans-serif; */
+  font-family: "Fraunces", serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* navbar */
+
+nav {
+  background-color: #3dbeff;
+  padding: 2.125rem 3rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 31.25rem;
+  margin: 0;
+}
+
+nav ul li {
+  color: white;
+  font-family: "Barlow", sans-serif;
+  position: relative;
+}
+
+nav ul li button {
+  background-color: white;
+  font-family: "Fraunces", serif;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0.8rem 2rem;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+nav ul li button:hover {
+  background-color: #72cefd;
+  color: white;
+}
+
+.none {
+  display: none;
+}
+
+/* landing page */
+
+.land {
+  background-color: #3dbeff;
+  height: 85vh;
+  background-image: url("images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 90rem;
+}
+
+.land h1 {
+  margin-bottom: 5.5rem;
+  color: white;
+  letter-spacing: 11px;
+}
+
+/* about */
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* min-height: 100rem; */
+}
+
+.about .egg {
+  background-image: url("images/desktop/image-transform.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50rem;
+}
+.about .glass {
+  background-image: url("images/desktop/image-stand-out.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50rem;
+}
+.about .kraz {
+  background-image: url("images/desktop/image-graphic-design.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50rem;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  padding: 0 5rem 10rem;
+  text-align: center;
+}
+.about .orange {
+  background-image: url("images/desktop/image-photography.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50rem;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  padding: 0 5rem 10rem;
+  text-align: center;
+}
+.about .text {
+  background-color: #fffbf8;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 8rem;
+  height: 50rem;
+}
+
+.about .text h1 {
+  color: #2c3844;
+  font-weight: 900;
+}
+
+.about .text p {
+  margin-top: 3.375rem;
+  margin-bottom: 3.375rem;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.125rem;
+  color: #9795a0;
+}
+
+.about .text button {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #fad90040;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.about .text button:hover {
+  border-bottom: 3px solid #fad700;
+}
+
+.about .text-2 button {
+  border-bottom: 3px solid #fa00643f;
+}
+
+.about .text-2 button:hover {
+  border-bottom: 3px solid #fa0064;
+}
+
+/* services */
+
+.services {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  text-align: center;
+  background-color: #fffbf8;
+}
+
+.services h1 {
+  color: #9e9ea0;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: 400;
+  font-size: 1.875rem;
+  margin-bottom: 5rem;
+}
+
+.services .reviews {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.services .reviews img {
+  width: 80px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-bottom: 4rem;
+}
+
+.services .reviews h5 {
+  color: #57585a;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-bottom: 5rem;
+  line-height: 1.6;
+}
+
+.services .reviews h3 {
+  color: #2c3844;
+  font-size: 1.4375rem;
+}
+
+.services .reviews p {
+  font-family: "Barlow", sans-serif;
+  color: #b3b2b0;
+}
+
+/* projects */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  height: 20rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #90d4c5;
+}
+
+footer h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: #2f7666;
+  margin-bottom: 2rem;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+}
+
+footer ul li {
+  color: #2f7666;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+footer ul li:hover {
+  color: white;
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+@media (max-width: 912px) {
+  html {
+    font-size: 12px;
+  }
+  .land {
+    height: 40rem;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 14px;
+  }
+  nav ul {
+    position: absolute;
+    flex-direction: column;
+    top: 100px;
+    right: 10%;
+    background-color: white;
+    width: 80%;
+    max-width: 660px;
+    padding: 3.22rem 3.22rem 2.22rem;
+  }
+  .ulnone {
+    display: none;
+  }
+  nav ul li {
+    margin-bottom: 1rem;
+    color: #858492;
+  }
+  nav ul li button {
+    background-color: #fad700;
+  }
+  nav ul::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -29px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-right: 15px solid white;
+    border-bottom: 15px solid white;
+  }
+  .none {
+    display: block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .land {
+    height: 36rem;
+    background-image: url("images/mobile/image-header.jpg");
+    background-size: 40rem;
+  }
+  .services .reviews {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about .egg {
+    background-image: url("images/mobile/image-transform.jpg");
+  }
+  .about .glass {
+    background-image: url("images/mobile/image-stand-out.jpg");
+  }
+  .about .kraz {
+    background-image: url("images/mobile/image-graphic-design.jpg");
+  }
+  .about .orange {
+    background-image: url("images/mobile/image-photography.jpg");
+  }
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about .text {
+    align-items: center;
+    text-align: center;
+  }
+}
